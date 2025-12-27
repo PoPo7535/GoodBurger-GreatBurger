@@ -1,12 +1,14 @@
 using System;
+using System.ComponentModel;
 using System.Linq;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TitleScene : SetInspectorMonoBehaviour
 {
-    public Button startBtn;
+    [ReadOnly] public Button startBtn;
     public override void SetInspector()
     {
         var child = transform.GetAllChild();
